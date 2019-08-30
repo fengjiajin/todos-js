@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>task</title>
+		
+		<link rel="stylesheet" href="layui/css/layui.css?version=2019081703" />
+		<link rel="stylesheet" href="css/style.css?version=2019081705" />
+	</head>
+	<body>
+
+		<div class="todoapp">
+			<div align="center" >
+				<h1>todos</h1>
+			</div>
+			<br><br><br>
+			<div class="todoapp" style="padding-left: 30%;padding-right: 30%;">
+				
+				<div class="topdiv">
+					<!--<input id="checkAll" type="hidden" class="toggle-all" value="">-->
+					<label for="toggle-all">&nbsp;&nbsp;<i class="layui-icon layui-icon-down" onclick="checkAll()"></i></label>
+	
+					<input class="layui-input" id="addInfo" type="text" placeholder="What needs to be done?" 
+						onkeydown="addLi()" autocomplete="off" autofocus>
+				</div>
+				
+				<div>  
+				    <ul id="list" class="list"> 
+				    	
+				    </ul>  
+				</div>
+				
+				<div class="enddiv">
+					<div class="enddiv2">
+						<input id="showType" type="hidden" value="">
+						<span><strong id="itemLeft">0</strong> item left</span>
+						
+						<span style="padding-left: 120px;"></span>
+						<a class="enda endselected" id="all" onclick="reloadList('all')">All</a>
+						<a class="enda" id="active" onclick="reloadList('active')">Active</a>
+						<a class="enda" id="completed" onclick="reloadList('completed')">Completed</a>
+						
+						<button class="clear-completed" onclick="clearCompleted()">Clear completed</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jsevent.js?version=2019081702"></script>
+		<script type="text/javascript" src="layui/layui.js?version=2019081702"></script>
+	</body>
+			
+</html>

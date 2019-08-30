@@ -1,0 +1,132 @@
+
+.layui-input, .layui-textarea {
+    display: inline;
+}
+
+.topdiv {
+	border: 1px solid #e2e2e2;
+}
+
+.enddiv {
+	height: 38px;
+	border: 1px solid #e2e2e2;
+}
+.enddiv2 {
+	margin: 11px 10px;
+}
+
+/*todo头部样式*/
+.todoapp h1 {
+    /*position: absolute;*/
+    top: 0px;
+    width: 100%;
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(175, 47, 47, 0.15);
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+}
+
+.list li {
+	height: 38px;
+	border: 1px solid #e2e2e2;
+}
+.view {
+	margin: 11px 10px;
+}
+
+/*添加信息的输入框样式*/
+#addInfo {
+	height: 38px;
+	width: 95%;
+	border: none;
+}
+
+/*每一个li的样式*/
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.toggle {
+	margin: 0px 12px 0px 0px;
+}
+
+/*所有按钮样式*/
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    -webkit-appearance: none;
+    /*appearance: none;*/
+    -webkit-font-smoothing: antialiased;
+    /*-moz-osx-font-smoothing: grayscale;*/
+}
+
+/*每个li的删除按钮样式*/
+.delete:after {
+    content: '×';
+}
+.delete {
+    /*display: none;*/
+    float: right;/*
+    position: relative;*/
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+
+    color: #cc9a9a;
+}
+
+/*Clear completed按钮样式*/
+.clear-completed {
+    float: right;
+    position: relative;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 未被访问的链接 */
+/*a:link {
+	color: #FF0000;
+}*/
+/* 已被访问的链接 */
+/*a:visited {
+	color: #00FF00;
+}*/
+/* 鼠标指针移动到链接上 */
+.clear-completed:hover {
+	/*color: #FF00FF;*/
+	text-decoration: underline;
+}
+/* 正在被点击的链接 */   
+/*a:active {
+	color: #0000FF;
+}*/
+
+
+.enda:hover {
+    border-color: rgba(104, 66, 66, 0.1);
+    cursor: pointer;
+}
+.enda{
+    color: inherit;
+    margin: 3px;
+    padding: 3px 7px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.endselected {
+	border-color: rgba(104, 66, 66, 0.1);
+}
